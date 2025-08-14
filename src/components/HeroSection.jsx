@@ -13,10 +13,10 @@ export default function HeroSection() {
                 Ananda Salwa P.{" "}
               </span>
             </h1>
-            <h2 className="font-medium text-slate-500 text-lg mb-5 lg:text-2xl">
+            <h2 className="font-medium text-secondary text-lg mb-5 lg:text-2xl">
               FullStack Dev & <span className="text-dark">Musician</span>
             </h2>
-            <p className="font-medium text-slate-400 mb-10 leading-relaxed  text-justify lg:w-[500px]">
+            <p className="font-medium text-secondary mb-10 leading-relaxed  text-justify lg:w-[500px]">
               Saya adalah <span className="text-dark">software engineer</span>{" "}
               yang ramah dan ganteng, dan saya sangat gemar bermain gitar dan
               bernyanyi. saya juga seorang olahragawan, saya suka berlari

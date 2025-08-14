@@ -16,6 +16,7 @@ export default {
       colors: {
         primary: "#dc2626",
         dark: "#0f172a",
+        secondary: "#64748b",
       },
       // Custom screen
       screens: {
