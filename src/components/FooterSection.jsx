@@ -8,24 +8,42 @@ export default function FooterSection() {
           <div className="w-full px-4 mb-12 font-medium md:w-1/2">
             <h2 className="font-bold text-4xl text-white mb-5">Ananda</h2>
             <h3 className="font-bold text-2xl mb-2">Contact me</h3>
-            <p>anandasalwapratama125@gmail.com</p>
+            <span className="flex gap-2 items-center ">
+              <a href="" className="text-white">
+                <svg
+                  width={20}
+                  className="fill-current"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Gmail</title>
+                  <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+                </svg>
+              </a>
+              <a className="hover:text-blue-700 cursor-pointer">
+                anandasalwapratama125@gmail.com
+              </a>
+            </span>
             <p>DSN. Babadan pace</p>
             <p>Nganjuk</p>
           </div>
 
-          <div className="w-full px-4 mb-12 md:w-1/2 text-slate-400">
+          <div className="w-full px-4 mb-12 md:w-1/2 text-slate-400 flex flex-col gap-3">
             <h3 className="font-bold text-white text-4xl mb-5">
               Kategori Tulisan
             </h3>
-            <p>Programming</p>
-            <p>Teknologi</p>
-            Gaya hidup
+            <a>Programming</a>
+            <a>Teknologi</a>
+            <a href="">Gaya Hidup</a>
           </div>
 
           <div className="w-full px-4 mb-12 md:w-1/2 flex flex-col gap-3">
             <h3 className="font-bold text-white text-4xl mb-5">Tautan</h3>
             {links.map((link) => (
-              <a href={link.href}>{link.label}</a>
+              <a className="hover:text-primary w-fit" href={link.href}>
+                {link.label}
+              </a>
             ))}
           </div>
         </div>
