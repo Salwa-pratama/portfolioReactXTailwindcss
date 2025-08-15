@@ -5,6 +5,8 @@ import PortfolioSection from "./components/PortfolioSection";
 import ClientSection from "./components/ClientSections";
 import BlogsSection from "./components/BlogsSection";
 import ContactSection from "./components/ContactSection";
+import FooterSection from "./components/FooterSection";
+
 export default function App() {
   return (
     <>
@@ -15,6 +17,7 @@ export default function App() {
       <ClientSection />
       <BlogsSection />
       <ContactSection />
+      <FooterSection />
     </>
   );
 }
