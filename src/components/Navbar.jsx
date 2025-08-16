@@ -14,7 +14,7 @@ export default function Navbar({ active }) {
           <li className="group">
             <a
               href={link.href}
-              className="transition lg:font-bold duration-300 ease-in-out text-base text-dark py-2 mx-8 flex lg:mx-4 lg:text-[12px]  group-hover:text-primary"
+              className="transition lg:font-bold duration-300 ease-in-out text-base text-dark py-2 mx-8 flex lg:mx-4 lg:text-[12px]  group-hover:text-primary "
             >
               {link.label}
             </a>

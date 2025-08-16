@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
-
+import LogoImg from "../../public/assets/Logo/logo2.png";
 export default function HeaderSection() {
   const [active, setActive] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,22 +22,22 @@ export default function HeaderSection() {
   }, []);
   return (
     <header
-      className={`bg-transparent top-0 left-0 w-full flex items-center z-10 transition duration-300 ease-in-out ${
+      className={`bg-white bg-opacity-75 top-0 left-0 w-full flex items-center z-10 transition duration-300 ease-in-out border-2 h-[50px] ${
         isScrolled ? "navbar-fixed" : "absolute"
       }`}
     >
       <div className="container">
         <div className="flex items-center justify-between relative">
-          <div className="px-4 ">
+          <div className="px-2">
             <a
               href="#home"
               className="font-bold text-lg text-primary block py-6 "
             >
-              Ananda
+              <img width={40} src={LogoImg} alt="" />
             </a>
           </div>
 
-          <div className="flex items-center px-4">
+          <div className="flex items-center px-2">
             <button
               onClick={() => setActive(!active)}
               id="hamberger-menu"
