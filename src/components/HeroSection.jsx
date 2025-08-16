@@ -2,14 +2,17 @@ import heroImg from "../../public/assets/noName.png";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="pt-36">
+    <section
+      id="home"
+      className="pt-36 dark:bg-dark transition duration-300 ease-in-out "
+    >
       <div className="container">
         <div className="flex flex-wrap ">
           {/* Hero Information */}
           <div className="w-full self-center px-4 lg:w-2/3 ">
             <h1 className="text-base font-semibold text-primary md:text-xl ">
               Hey All👋, I'm{" "}
-              <span className="block font-bold text-dark text-4xl mt-1 lg:text-5xl">
+              <span className="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white">
                 Ananda Salwa P.{" "}
               </span>
             </h1>
@@ -17,11 +20,20 @@ export default function HeroSection() {
               FullStack Dev & <span className="text-dark">Musician</span>
             </h2>
             <p className="font-medium text-secondary mb-10 leading-relaxed  text-justify lg:w-[500px]">
-              Saya adalah <span className="text-dark">software engineer</span>{" "}
+              Saya adalah{" "}
+              <span className="text-dark dark:text-white transition duration-300">
+                software engineer
+              </span>{" "}
               yang ramah dan ganteng, dan saya sangat gemar bermain gitar dan
               bernyanyi. saya juga seorang olahragawan, saya suka berlari
-              mengejar <span className="text-dark">cita-cita </span> dan setelah
-              itu berlari mengejar <span className="text-dark">cinta!</span>
+              mengejar{" "}
+              <span className="text-dark dark:text-white transition duration-300">
+                cita-cita{" "}
+              </span>{" "}
+              dan setelah itu berlari mengejar{" "}
+              <span className="text-dark dark:text-white transition duration-300">
+                cinta!
+              </span>
             </p>
             <a
               href="#"
@@ -38,9 +50,9 @@ export default function HeroSection() {
                 height={400}
                 src={heroImg}
                 alt="Ananda Salwa Pratama"
-                className="max-w-full mx-auto lg:ml-auto"
+                className="max-w-full mx-auto lg:ml-auto z-10 relative"
               />
-              <span className="absolute -bottom-20 -z-10 left-1/2 -translate-x-1/2 md:scale-100">
+              <span className="absolute -bottom-20  left-1/2 -translate-x-1/2 md:scale-100 ">
                 <svg
                   width={350}
                   height={400}

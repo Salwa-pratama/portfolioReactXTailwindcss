@@ -1,11 +1,29 @@
 import { links } from "../data/links";
+import { useState, useEffect } from "react";
 
 export default function FooterSection() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <footer className="bg-dark pt-24 pb-12 text-slate-400">
+    <footer className="bg-dark pt-24 pb-12 text-slate-400 dark:bg-black transition duration-300">
       <div className="container">
         <div className="flex flex-wrap">
-          <div className="w-full px-4 mb-12 font-medium md:w-1/2">
+          <div className="w-full px-4 mb-12 font-medium md:w-1/3">
             <h2 className="font-bold text-4xl text-white mb-5">Ananda</h2>
             <h3 className="font-bold text-2xl mb-2">Contact me</h3>
             <span className="flex gap-2 items-center ">
@@ -29,7 +47,7 @@ export default function FooterSection() {
             <p>Nganjuk</p>
           </div>
 
-          <div className="w-full px-4 mb-12 md:w-1/2 text-slate-400 flex flex-col gap-3">
+          <div className="w-full px-4 mb-12 md:w-1/3 text-slate-400 flex flex-col gap-3">
             <h3 className="font-bold text-white text-4xl mb-5">
               Kategori Tulisan
             </h3>
@@ -38,7 +56,7 @@ export default function FooterSection() {
             <a href="">Gaya Hidup</a>
           </div>
 
-          <div className="w-full px-4 mb-12 md:w-1/2 flex flex-col gap-3">
+          <div className="w-full px-4 mb-12 md:w-1/3 flex flex-col gap-3">
             <h3 className="font-bold text-white text-4xl mb-5">Tautan</h3>
             {links.map((link) => (
               <a className="hover:text-primary w-fit" href={link.href}>
@@ -105,6 +123,13 @@ export default function FooterSection() {
           Create by Ananda Salwa Pratama with Tailwindcss and react
         </p>
       </div>
+
+      <a
+        href="#home"
+        className={`fixed bottom-4 right-4 z-[9999] ${isScrolled ? "flex" : "hidden"} h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse`}
+      >
+        <span className="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2 "></span>
+      </a>
     </footer>
   );
 }

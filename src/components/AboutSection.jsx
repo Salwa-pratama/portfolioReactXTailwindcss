@@ -1,13 +1,16 @@
 export default function AboutSection() {
   return (
-    <section id="about" className="pt-36 pb-32">
+    <section
+      id="about"
+      className="pt-36 pb-32 dark:bg-dark transition duration-300"
+    >
       <div className="container">
         <div className="flex flex-wrap">
           <div className="w-full px-4 mb-10 lg:w-1/2">
             <h4 className="font-bold uppercase text-primary text-lg mb-3">
               About Me
             </h4>
-            <h2 className="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">
+            <h2 className="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl dark:text-white transition duration-300">
               Ayo berkolaborasi untuk menciptakan sesuatu yang keren!
             </h2>
             <p className="font-medium text-base text-secondary max-w-xl text-justify">
@@ -28,7 +31,7 @@ export default function AboutSection() {
               <a
                 href=""
                 target="_blank"
-                className="w-9 h-9 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white  transition duration-300 ease-in-out "
+                className="w-9 h-9 rounded-full flex dark:text-white justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white  transition duration-300 ease-in-out "
               >
                 <svg
                   className="fill-current"
@@ -45,7 +48,7 @@ export default function AboutSection() {
               <a
                 href="https://www.instagram.com/heyannda?igsh=aDY1Y2RudmVoNzNk"
                 target="_blank"
-                className="w-9 h-9 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out "
+                className="w-9 h-9 rounded-full flex dark:text-white justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out "
               >
                 <svg
                   className="fill-current"
@@ -63,7 +66,7 @@ export default function AboutSection() {
               <a
                 href="https://x.com/Nan_socgh?t=Uw2QufN54uNLJjoi3Bkmyg&s=09"
                 target="_blank"
-                className="w-9 h-9 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out "
+                className="w-9 h-9 rounded-full flex dark:text-white justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out "
               >
                 <svg
                   className="fill-current"

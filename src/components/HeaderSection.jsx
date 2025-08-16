@@ -7,7 +7,6 @@ export default function HeaderSection() {
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log("Nilai scrollY: ", window.scrollY);
       if (window.scrollY > 10) {
         setIsScrolled(true);
       } else {
@@ -22,13 +21,13 @@ export default function HeaderSection() {
   }, []);
   return (
     <header
-      className={`bg-white bg-opacity-75 top-0 left-0 w-full flex items-center z-10 transition duration-300 ease-in-out border-2 h-[50px] ${
+      className={`bg-white dark:bg-dark dark:bg-opacity-45 bg-opacity-45 top-0 left-0 w-full flex items-center z-20 transition duration-300 ease-in-out  h-[50px] ${
         isScrolled ? "navbar-fixed" : "absolute"
       }`}
     >
       <div className="container">
         <div className="flex items-center justify-between relative">
-          <div className="px-2">
+          <div className={`px-2 ${isScrolled ? "lg:ml-10" : "ml-0"}`}>
             <a
               href="#home"
               className="font-bold text-lg text-primary block py-6 "
@@ -47,9 +46,9 @@ export default function HeaderSection() {
                 active ? "hamburger-active" : ""
               }`}
             >
-              <span className="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
-              <span className="hamburger-line transition duration-300 ease-in-out"></span>
-              <span className="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+              <span className="hamburger-line transition duration-300 ease-in-out origin-top-left dark:bg-white"></span>
+              <span className="hamburger-line transition duration-300 ease-in-out dark:bg-white"></span>
+              <span className="hamburger-line transition duration-300 ease-in-out origin-bottom-left dark:bg-white"></span>
             </button>
             <Navbar active={active} />
           </div>
