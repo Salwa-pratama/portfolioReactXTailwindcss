@@ -17,7 +17,8 @@ export default function HeroSection() {
               </span>
             </h1>
             <h2 className="font-medium text-secondary text-lg mb-5 lg:text-2xl">
-              FullStack Dev & <span className="text-dark">Musician</span>
+              FullStack Dev &{" "}
+              <span className="text-dark dark:text-white">Musician</span>
             </h2>
             <p className="font-medium text-secondary mb-10 leading-relaxed  text-justify lg:w-[500px]">
               Saya adalah{" "}
@@ -40,6 +41,12 @@ export default function HeroSection() {
               className="text-base bg-primary font-semibold text-white py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
             >
               Hubungi Saya
+            </a>
+            <a
+              href="#about"
+              className="text-base bg-primary font-semibold text-white py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out ml-4"
+            >
+              Scroll Down
             </a>
           </div>
           {/* Hero Image */}

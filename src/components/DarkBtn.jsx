@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 
 export default function DarkBtn() {
   const [active, setActive] = useState(false);
-
   useEffect(() => {
     if (active) {
       document.documentElement.classList.add("dark");
@@ -12,7 +11,7 @@ export default function DarkBtn() {
   });
 
   return (
-    <li className=" flex items-center justify-center mt-2 lg:mt-0 lg:justify-normal  lg:ml-10">
+    <li className=" flex items-center justify-center mt-2 lg:mt-0 lg:justify-normal  lg:nml-10">
       <div className="flex">
         <span className="mr-2 text-sm text-primary font-bold">Light</span>
         <input
