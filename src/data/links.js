@@ -54,25 +54,25 @@ export const blogsImg = [
 export const projectImg = [
   {
     tittle: "Course Tailwind Master",
-    img: "../../public/assets/projek-img/1.png",
+    img: "/assets/projek-img/1.png",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamusad commodi hic.",
   },
   {
     tittle: "Mern Stack",
-    img: "../../public/assets/projek-img/2.png",
+    img: "/assets/projek-img/2.png",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamusad commodi hic.",
   },
   {
     tittle: "Figma Mastery",
-    img: "../../public/assets/projek-img/3.png",
+    img: "/assets/projek-img/3.png",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamusad commodi hic.",
   },
   {
     tittle: "Figma Mastery",
-    img: "../../public/assets/projek-img/3.png",
+    img: "/assets/projek-img/3.png",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamusad commodi hic.",
   },
