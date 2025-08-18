@@ -21,7 +21,7 @@ export default function HeaderSection() {
   }, []);
   return (
     <header
-      className={`bg-dark   dark:bg-dark dark:bg-opacity-45 bg-opacity-45 top-0 left-0 w-full flex items-center z-20 transition duration-300 ease-in-out  h-[50px] ${
+      className={`bg-dark   dark:bg-dark dark:bg-opacity-45 bg-opacity-45 top-0 left-0 w-full flex items-center z-50 transition duration-300 ease-in-out  h-[50px] ${
         isScrolled ? "navbar-fixed bg-dark" : "absolute"
       }`}
     >
