@@ -80,15 +80,15 @@ export const projectImg = [
 
 export const clientLogo = [
   {
-    src: "../../public/assets/client-img/gojek.png",
+    src: "/assets/client-img/gojek.png",
   },
   {
-    src: "../../public/assets/client-img/doozie.svg",
+    src: "/assets/client-img/doozie.svg",
   },
   {
-    src: "../../public/assets/client-img/gojek.png",
+    src: "/assets/client-img/gojek.png",
   },
   {
-    src: "../../public/assets/client-img/doozie.svg",
+    src: "/assets/client-img/doozie.svg",
   },
 ];
