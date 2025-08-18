@@ -28,25 +28,25 @@ export const links = [
 export const blogsImg = [
   {
     tittle: "Coffe Shop",
-    img: "../../public/assets/blogs-img/1.jpg",
+    img: "/assets/blogs-img/1.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamusad commodi hic.",
   },
   {
     tittle: "Mountain Camping",
-    img: "../../public/assets/blogs-img/2.jpg",
+    img: "/assets/blogs-img/2.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamusad commodi hic.",
   },
   {
     tittle: "Runing in the morning",
-    img: "../../public/assets/blogs-img/3.jpg",
+    img: "/assets/blogs-img/3.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamusad commodi hic.",
   },
   {
     tittle: "Reading book",
-    img: "../../public/assets/blogs-img/4.jpg",
+    img: "/assets/blogs-img/4.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamusad commodi hic.",
   },
