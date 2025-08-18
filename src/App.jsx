@@ -11,7 +11,7 @@ import AboutSectionNew from "./components/newComponent/Section/AboutSectionNew";
 export default function App() {
   return (
     <>
-      <div className="container">
+      <div className="md:container">
         <HeaderSection />
         <Hero />
         <AboutSectionNew />

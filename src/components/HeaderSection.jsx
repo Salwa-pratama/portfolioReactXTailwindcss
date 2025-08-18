@@ -25,9 +25,9 @@ export default function HeaderSection() {
         isScrolled ? "navbar-fixed" : "absolute"
       }`}
     >
-      <div className="container">
+      <div className="md:container  w-full">
         <div className="flex items-center justify-between relative">
-          <div className={`px-2 ${isScrolled ? "lg:ml-10" : "ml-0"}`}>
+          <div className={`px-2 ${isScrolled ? "ml-[8px]" : "ml-0"} `}>
             <a
               href="#home"
               className="font-bold text-lg text-primary block py-6 "
@@ -36,13 +36,15 @@ export default function HeaderSection() {
             </a>
           </div>
 
-          <div className="flex items-center px-2">
+          <div
+            className={`flex items-center px-2   ${isScrolled ? "mr-[8px]" : "mr-0"}`}
+          >
             <button
               onClick={() => setActive(!active)}
               id="hamberger-menu"
               type="button"
               name="hamburger"
-              className={`block absolute right-4 lg:hidden ${
+              className={`block absolute right-4 lg:hidden ${isScrolled ? "mr-[5px]" : "mr-0"}  ${
                 active ? "hamburger-active" : ""
               }`}
             >
