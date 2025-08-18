@@ -11,7 +11,7 @@ import AboutSectionNew from "./components/newComponent/Section/AboutSectionNew";
 export default function App() {
   return (
     <>
-      <div className="sm:container">
+      <div className="sm:container w-full">
         <HeaderSection />
         <Hero />
         <AboutSectionNew />
