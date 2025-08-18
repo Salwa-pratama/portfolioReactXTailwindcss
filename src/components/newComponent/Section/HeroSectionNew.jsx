@@ -27,7 +27,7 @@ export default function Hero() {
             <Float>
               <Astronaut
                 scale={isMobile && 0.1}
-                position={isMobile && [0, -1.5, 1]}
+                position={isMobile && [0, -1.5, 0.9]}
               />
             </Float>
             <Rig />

@@ -5,7 +5,7 @@ export default function Navbar({ active }) {
     <nav
       className={` ${
         active ? "" : "hidden"
-      } absolute py-5    bg-opacity-75 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full
+      } absolute py-2 bg-opacity-75 shadow-lg rounded-lg max-w-[200px] w-full right-10 top-full h-fit
       lg:block lg:static lg:bg-transparent lg:dark:bg-transparent dark:bg-dark dark:bg-opacity-75 lg:max-w-full lg:shadow-none lg:rounded-none   bg-dark transition duration-300  lg:h-[50px] lg:mr-10 pb-14
       `}
     >

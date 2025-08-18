@@ -21,13 +21,13 @@ export default function HeaderSection() {
   }, []);
   return (
     <header
-      className={`bg-dark dark:bg-dark dark:bg-opacity-45 bg-opacity-45 top-0 left-0 w-full flex items-center z-20 transition duration-300 ease-in-out  h-[50px] ${
-        isScrolled ? "navbar-fixed" : "absolute"
+      className={`bg-dark   dark:bg-dark dark:bg-opacity-45 bg-opacity-45 top-0 left-0 w-full flex items-center z-20 transition duration-300 ease-in-out  h-[50px] ${
+        isScrolled ? "navbar-fixed bg-dark" : "absolute"
       }`}
     >
       <div className="md:container  w-full">
         <div className="flex items-center justify-between relative">
-          <div className={`px-2 ${isScrolled ? "ml-[8px]" : "ml-0"} `}>
+          <div className={`px-2 ${isScrolled ? "ml-[15px]" : "ml-0"} `}>
             <a
               href="#home"
               className="font-bold text-lg text-primary block py-6 "
@@ -37,7 +37,7 @@ export default function HeaderSection() {
           </div>
 
           <div
-            className={`flex items-center px-2   ${isScrolled ? "mr-[8px]" : "mr-0"}`}
+            className={`flex items-center px-2   ${isScrolled ? "mr-[15px]" : "mr-0"}`}
           >
             <button
               onClick={() => setActive(!active)}
