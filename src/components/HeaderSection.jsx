@@ -21,7 +21,7 @@ export default function HeaderSection() {
   }, []);
   return (
     <header
-      className={`bg-white dark:bg-dark dark:bg-opacity-45 bg-opacity-45 top-0 left-0 w-full flex items-center z-20 transition duration-300 ease-in-out  h-[50px] ${
+      className={`bg-dark dark:bg-dark dark:bg-opacity-45 bg-opacity-45 top-0 left-0 w-full flex items-center z-20 transition duration-300 ease-in-out  h-[50px] ${
         isScrolled ? "navbar-fixed" : "absolute"
       }`}
     >
@@ -46,9 +46,9 @@ export default function HeaderSection() {
                 active ? "hamburger-active" : ""
               }`}
             >
-              <span className="hamburger-line transition duration-300 ease-in-out origin-top-left dark:bg-white"></span>
-              <span className="hamburger-line transition duration-300 ease-in-out dark:bg-white"></span>
-              <span className="hamburger-line transition duration-300 ease-in-out origin-bottom-left dark:bg-white"></span>
+              <span className="hamburger-line transition duration-300 ease-in-out origin-top-left bg-white"></span>
+              <span className="hamburger-line transition duration-300 ease-in-out bg-white"></span>
+              <span className="hamburger-line transition duration-300 ease-in-out origin-bottom-left bg-white"></span>
             </button>
             <Navbar active={active} />
           </div>

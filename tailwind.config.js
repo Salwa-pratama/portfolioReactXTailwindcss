@@ -5,7 +5,7 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "20px",
+      padding: "40px",
     },
     // Custom Theme
     extend: {
@@ -17,6 +17,7 @@ export default {
       colors: {
         primary: "#dc2626",
         dark: "#0f172a",
+        midnight: "#06091f",
         secondary: "#64748b",
       },
       // Custom screen

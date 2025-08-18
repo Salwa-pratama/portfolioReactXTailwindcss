@@ -1,4 +1,5 @@
 import heroImg from "../../public/assets/noName.png";
+import HeroText from "./newComponent/HeroSecrion.jsx/HeroText";
 
 export default function HeroSection() {
   return (
