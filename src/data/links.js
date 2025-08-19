@@ -96,28 +96,29 @@ export const clientLogo = [
 export const testimonials = [
   {
     quote:
-      "saya berusia 21 tahun, Mahasiswa Universitas Nusantara PGRI kediri, saya memiliki semangat untuk mempelajari teknologi modern dan bercita-cita menciptakan solusi digital yang bermanfaat.",
+      "21 years old, Mahasiswa Universitas Nusantara PGRI kediri, saya memiliki semangat untuk mempelajari teknologi modern dan bercita-cita menciptakan solusi digital yang bermanfaat.",
     name: "Ananda Salwa Pratama",
     designation: "Informatics engineering students",
-    src: "/assets/About-Img/4.jpg",
+    src: "/assets/About-Img/1.jpg",
   },
   {
     quote:
       "Coding bukan hanya soal bagaimana kita menyelesaikan suatu masalah, tapi juga tentang bagaimana kita merawat dan terus mengembangkan solusi yang kita ciptakan ",
     name: "Engineering",
-    designation: "Full Stack Developers",
+    designation: "Full Stack Developer",
     src: "/assets/About-Img/2.jpg",
   },
   {
     quote: "Aktivtas fisik merupakan pelarian dari capeknya ngoding :v",
-    name: "Saya Suka Berlari",
-    designation: "Running after dreams",
-    src: "/assets/About-Img/3.jpg",
+    name: "Saya Suka lari",
+    designation: "Hobby",
+    src: "/assets/About-Img/6.jpg",
   },
   {
-    quote: "Bernanyi dengan gitar itu sangat menyenangkan ya kawan2 hehe",
-    name: "Saya juga suka bernanyi",
-    designation: "Full Stack Developers",
-    src: "/assets/About-Img/5.jpg",
+    quote:
+      "Mempelajari suatu hal yang baru itu sangat menyenangkan, apalagi belajar musik",
+    name: "Saya suka music",
+    designation: "Hobby",
+    src: "/assets/About-Img/7.jpg",
   },
 ];

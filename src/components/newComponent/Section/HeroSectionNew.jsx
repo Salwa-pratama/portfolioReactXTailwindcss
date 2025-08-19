@@ -19,10 +19,10 @@ export default function Hero() {
       <HeroText />
       <ParallaxBackground />
       <figure
-        className="absolute inset-0 -z-10"
+        className="absolute inset-0 "
         style={{ width: "100vw", height: "100vh" }}
       >
-        <Canvas camera={{ position: [0, 1, 3] }}>
+        <Canvas camera={{ position: [0, 1, 2.2] }}>
           <Suspense fallback={<Loader />}>
             <Float>
               <Astronaut
