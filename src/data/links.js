@@ -106,7 +106,7 @@ export const testimonials = [
       "Coding bukan hanya soal bagaimana kita menyelesaikan suatu masalah, tapi juga tentang bagaimana kita merawat dan terus mengembangkan solusi yang kita ciptakan ",
     name: "Engineering",
     designation: "Full Stack Developer",
-    src: "/assets/About-Img/2.jpg",
+    src: "/assets/About-Img/8.jpg",
   },
   {
     quote: "Aktivtas fisik merupakan pelarian dari capeknya ngoding :v",
